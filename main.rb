@@ -1,28 +1,19 @@
-def name
-end
-def symbol
+#!/usr/bin/env ruby
 
-def player_name
-    puts "Please enter your name"
-    player1 = gets.chomp()
-    player1 = name
-    puts "Please enter your name"
-    player2 = gets.chomp()
-    player2 = name
-end
-def player_symbol("player1_x", "player2_o")
-@player1_x = "player1_x"
-@player2_o = "player2_o"
-
-if player1.turn? 
-    puts "please cast your lot,first player!"
-    
-elsif player2.turn?
-    puts "please cast your lot, second player!"
-else
-    puts "fallow!"
+class Player
+    attr_accessor :name, :key
+    def initialize(name,key)
+        @name = name
+        @key = key
+    end
 end
 
+def player_init
+        puts "Enter the name of the first player"
+        @player1.name = gets.chomp()
+        puts "Enter the name of the second player"
+        @player2.name = gets.chomp()
 end
-
-
+ p.Player.new
+ p.player_init()
+ puts "Now, your move is displayed on the board"
