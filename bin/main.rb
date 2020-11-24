@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env rub
 
 class Player
   attr_accessor :name, :key
